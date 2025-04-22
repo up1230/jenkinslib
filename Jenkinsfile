@@ -3,7 +3,7 @@
 @Library('jenkinslib')
 
 def tools = new org.devops.tools()
-call()
+new call()
 pipeline {
     agent any
     parameters { 
