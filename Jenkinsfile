@@ -1,8 +1,8 @@
 #!groovy
 
-@Library('jenkinslib')
+@Library('jenkinslib') _
 
-def tools = new org.devops.tools() _
+def tools = new org.devops.tools()
 global()
 
 pipeline {
