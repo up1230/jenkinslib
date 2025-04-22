@@ -2,8 +2,9 @@
 
 @Library('jenkinslib')
 
-def tools = new org.devops.tools()
-new call()
+def tools = new org.devops.tools() _
+call()
+
 pipeline {
     agent any
     parameters { 
