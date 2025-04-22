@@ -3,7 +3,7 @@
 @Library('jenkinslib')
 
 def tools = new org.devops.tools() _
-call()
+helloglobal()
 
 pipeline {
     agent any
