@@ -12,15 +12,15 @@ pipeline {
         booleanParam(name: 'DEBUG_BUILD', defaultValue: false, description: '')
     }
     stages {
-        stage('Stage: Get paras') {
+        stage('Stage Nmae: Get paras') {
             steps {
-                echo "Hello World from Github!"
+                tools.printMes("Hello World from Github!", "red")
                 input cancel: 'Backup', message: 'Do you wanna keep printing?', ok: 'Continue', parameters: [choice(choices: ['NO', 'YES'], description: '''NO for abort
 YES for continue''', name: 'choice you decision')], submitter: 'admin'
-                println("${demopara}")
-                println("${DEPLOY_ENV}")
-                println("${DEBUG_BUILD}")
-                println(tools.printMes("this is from github share library!"))
+                tools.printMes("this is var DEBUG_BUILD: ${demopara}", "blue")
+                tools.printMes("this is var DEBUG_BUILD: ${DEPLOY_ENV}", "blue")
+                tools.printMes("this is var DEBUG_BUILD: ${DEBUG_BUILD}", "blue")
+                tools.printMes("this is from github share library!", "green")
             }
         }
     }
