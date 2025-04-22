@@ -19,12 +19,6 @@ pipeline {
                 }
                 input cancel: 'Backup', message: 'Do you wanna keep printing?', ok: 'Continue', parameters: [choice(choices: ['NO', 'YES'], description: '''NO for abort
 YES for continue''', name: 'choice you decision')], submitter: 'admin'
-                script{
-                    tools.printMes("this is var DEBUG_BUILD: ${demopara}", 'blue')
-                    tools.printMes("this is var DEBUG_BUILD: ${DEPLOY_ENV}", 'blue')
-                    tools.printMes("this is var DEBUG_BUILD: ${DEBUG_BUILD}", 'blue')
-                    tools.printMes("this is from github share library!", 'green')
-                }
                 
             }
         }
