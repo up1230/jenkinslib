@@ -3,7 +3,7 @@
 @Library('jenkinslib') _
 
 def tools = new org.devops.tools()
-tools.printMes(global(), "yellow")
+tools.printMes(global(), 'yellow')
 
 pipeline {
     agent any
@@ -17,10 +17,10 @@ pipeline {
                 tools.printMes("Hello World from Github!", "red")
                 input cancel: 'Backup', message: 'Do you wanna keep printing?', ok: 'Continue', parameters: [choice(choices: ['NO', 'YES'], description: '''NO for abort
 YES for continue''', name: 'choice you decision')], submitter: 'admin'
-                tools.printMes("this is var DEBUG_BUILD: ${demopara}", "blue")
-                tools.printMes("this is var DEBUG_BUILD: ${DEPLOY_ENV}", "blue")
-                tools.printMes("this is var DEBUG_BUILD: ${DEBUG_BUILD}", "blue")
-                tools.printMes("this is from github share library!", "green")
+                tools.printMes("this is var DEBUG_BUILD: ${demopara}", 'blue')
+                tools.printMes("this is var DEBUG_BUILD: ${DEPLOY_ENV}", 'blue')
+                tools.printMes("this is var DEBUG_BUILD: ${DEBUG_BUILD}", 'blue')
+                tools.printMes("this is from github share library!", 'green')
             }
         }
     }
