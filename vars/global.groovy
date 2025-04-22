@@ -1,3 +1,3 @@
-def helloglobal(){
-  println("global vars")
+def call(){
+  println("call method: global vars")
 }
