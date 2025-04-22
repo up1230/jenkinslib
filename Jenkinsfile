@@ -3,7 +3,7 @@
 @Library('jenkinslib') _
 
 def tools = new org.devops.tools()
-global()
+tools.printMes(global(), "yellow")
 
 pipeline {
     agent any
