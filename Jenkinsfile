@@ -23,7 +23,9 @@ YES for continue''', name: 'choice you decision')], submitter: 'admin'
             }
         }
         stage('Stage Name: print mes'){
-            printMes("my var DEPLOY_ENV is : ${DEPLOY_ENV}", "green")
+            steps{
+                printMes("my var DEPLOY_ENV is : ${DEPLOY_ENV}", "green")
+            }
         }
     }
 }
