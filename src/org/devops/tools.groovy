@@ -1,7 +1,7 @@
 package org.devops
 
 //格式化输出
-def PrintMes(value,color){
+def toolprint(value,color){
     colors = ['red'    : "\033[40;31m >>>>>>>>>>${value}<<<<<<<<<< \033[0m",
               'green'  : "\033[40;32m >>>>>>>>>>${value}<<<<<<<<<< \033[0m",
               'yellow' : "\033[40;33m >>>>>>>>>>${value}<<<<<<<<<< \033[0m",
