@@ -3,6 +3,7 @@
 @Library('jenkinslib') _
 
 pipeline {
+    agent any
     stages {
         stage('Stage Nmae: Get paras') {
             steps {
