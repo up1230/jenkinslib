@@ -4,7 +4,7 @@ pipeline {
         stage('Stage Nmae: Get paras') {
             steps {
                 script{
-                    sh "mvn -v"
+                    bat "mvn -v"
                 }
             }
         }
