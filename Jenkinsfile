@@ -12,7 +12,7 @@ pipeline {
         booleanParam(name: 'DEBUG_BUILD', defaultValue: false, description: '')
     }
     stages {
-        stage('Stage Nmae: Get paras') {
+        stage('Stage Name: Get paras') {
             steps {
                 script{
                     tools.toolprint("Hello World from Github!", "red")
@@ -21,6 +21,9 @@ pipeline {
 YES for continue''', name: 'choice you decision')], submitter: 'admin'
                 
             }
+        }
+        stage('Stage Name: print mes'){
+            printMes("my var DEPLOY_ENV is : ${DEPLOY_ENV}", "green")
         }
     }
 }
