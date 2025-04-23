@@ -4,7 +4,7 @@ pipeline {
         stage('Stage Nmae: Get paras') {
             steps {
                 script{
-                    bat "mvn -v"
+                    echo ${MAVEN_HOME}
                 }
             }
         }
