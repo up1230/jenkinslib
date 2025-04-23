@@ -1,7 +1,3 @@
-#!groovy
-
-@Library('jenkinslib') _
-
 pipeline {
     agent any
     stages {
