@@ -8,6 +8,6 @@ def PrintMes(value,color){
               'blue'   : "\033[47;34m >>>>>>>>>>${value}<<<<<<<<<< \033[0m"
              ]
     ansiColor('xterm') {
-        println(colors[color], "\033[0m${value}\033[0m")
+        println(colors[color])
     }
 }
